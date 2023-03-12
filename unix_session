@@ -1,0 +1,2092 @@
+Script started on 2023-03-12 21:00:11+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="148" LINES="35"]
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ pwd
+[?2004l
+/home
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls
+[?2004l
+[0m[01;34msagnik[0m
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ 
+[K]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ 
+[K]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls -F
+[?2004l
+[0m[01;34msagnik[0m/
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls --help
+[?2004l
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            change the default of using modification times;
+                               access time (-u): atime, access, use;
+                               change time (-c): ctime, status;
+                               birth time: birth, creation;
+                             with -l, WORD determines which time to show;
+                             with --sort=time, sort by WORD (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by time, newest first; see --time
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls -a
+[?2004l
+[0m[01;34m.[0m  [01;34m..[0m  [01;34msagnik[0m
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls -A
+[?2004l
+[0m[01;34msagnik[0m
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls --author
+[?2004l
+[0m[01;34msagnik[0m
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls -l --author
+[?2004l
+total 4
+drwxr-x--- 2 sagnik sagnik sagnik 4096 Mar 12 21:00 [0m[01;34msagnik[0m
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls -A -- [Kauthor
+[?2004l
+[0m[01;34msagnik[0m
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls -a
+[?2004l
+[0m[01;34m.[0m    [01;34mboot[0m  [01;34mhome[0m  [01;36mlib32[0m   [01;34mlost+found[0m  [01;34mopt[0m   [01;34mrun[0m   [01;34msrv[0m  [01;34musr[0m
+[01;34m..[0m   [01;34mdev[0m   [01;32minit[0m  [01;36mlib64[0m   [01;34mmedia[0m       [01;34mproc[0m  [01;36msbin[0m  [01;34msys[0m  [01;34mvar[0m
+[01;36mbin[0m  [01;34metc[0m   [01;36mlib[0m   [01;36mlibx32[0m  [01;34mmnt[0m         [01;34mroot[0m  [01;34msnap[0m  [30;42mtmp[0m
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls --author
+[?2004l
+[0m[01;36mbin[0m   [01;34metc[0m   [01;36mlib[0m    [01;36mlibx32[0m      [01;34mmnt[0m   [01;34mroot[0m  [01;34msnap[0m  [30;42mtmp[0m
+[01;34mboot[0m  [01;34mhome[0m  [01;36mlib32[0m  [01;34mlost+found[0m  [01;34mopt[0m   [01;34mrun[0m   [01;34msrv[0m   [01;34musr[0m
+[01;34mdev[0m   [01;32minit[0m  [01;36mlib64[0m  [01;34mmedia[0m       [01;34mproc[0m  [01;36msbin[0m  [01;34msys[0m   [01;34mvar[0m
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls -l --author
+[?2004l
+total 1472
+lrwxrwxrwx   1 root root root       7 Feb 11 03:05 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+drwxr-xr-x   2 root root root    4096 Apr 18  2022 [01;34mboot[0m
+drwxr-xr-x   9 root root root    3000 Mar 12 13:15 [01;34mdev[0m
+drwxr-xr-x  73 root root root    4096 Mar 12 20:59 [01;34metc[0m
+drwxr-xr-x   3 root root root    4096 Feb 18 20:23 [01;34mhome[0m
+-rwxr-xr-x   2 root root root 1440152 May  7  2022 [01;32minit[0m
+lrwxrwxrwx   1 root root root       7 Feb 11 03:05 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx   1 root root root       9 Feb 11 03:05 [01;36mlib32[0m -> [01;34musr/lib32[0m
+lrwxrwxrwx   1 root root root       9 Feb 11 03:05 [01;36mlib64[0m -> [01;34musr/lib64[0m
+lrwxrwxrwx   1 root root root      10 Feb 11 03:05 [01;36mlibx32[0m -> [01;34musr/libx32[0m
+drwx------   2 root root root   16384 Apr 10  2019 [01;34mlost+found[0m
+drwxr-xr-x   2 root root root    4096 Feb 11 03:05 [01;34mmedia[0m
+drwxr-xr-x   7 root root root    4096 Mar 10 16:21 [01;34mmnt[0m
+drwxr-xr-x   2 root root root    4096 Feb 11 03:05 [01;34mopt[0m
+dr-xr-xr-x 182 root root root       0 Mar 12 20:59 [01;34mproc[0m
+drwx------   2 root root root    4096 Feb 11 03:06 [01;34mroot[0m
+drwxr-xr-x   6 root root root     120 Mar 12 20:59 [01;34mrun[0m
+lrwxrwxrwx   1 root root root       8 Feb 11 03:05 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x   8 root root root    4096 Feb 11 03:06 [01;34msnap[0m
+drwxr-xr-x   2 root root root    4096 Feb 11 03:05 [01;34msrv[0m
+dr-xr-xr-x  11 root root root       0 Mar 12 13:15 [01;34msys[0m
+drwxrwxrwt   2 root root root    4096 Mar 12 20:59 [30;42mtmp[0m
+drwxr-xr-x  14 root root root    4096 Feb 11 03:05 [01;34musr[0m
+drwxr-xr-x  13 root root root    4096 Feb 11 03:06 [01;34mvar[0m
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls -lh
+[?2004l
+total 1.5M
+lrwxrwxrwx   1 root root    7 Feb 11 03:05 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+drwxr-xr-x   2 root root 4.0K Apr 18  2022 [01;34mboot[0m
+drwxr-xr-x   9 root root 3.0K Mar 12 13:15 [01;34mdev[0m
+drwxr-xr-x  73 root root 4.0K Mar 12 20:59 [01;34metc[0m
+drwxr-xr-x   3 root root 4.0K Feb 18 20:23 [01;34mhome[0m
+-rwxr-xr-x   2 root root 1.4M May  7  2022 [01;32minit[0m
+lrwxrwxrwx   1 root root    7 Feb 11 03:05 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx   1 root root    9 Feb 11 03:05 [01;36mlib32[0m -> [01;34musr/lib32[0m
+lrwxrwxrwx   1 root root    9 Feb 11 03:05 [01;36mlib64[0m -> [01;34musr/lib64[0m
+lrwxrwxrwx   1 root root   10 Feb 11 03:05 [01;36mlibx32[0m -> [01;34musr/libx32[0m
+drwx------   2 root root  16K Apr 10  2019 [01;34mlost+found[0m
+drwxr-xr-x   2 root root 4.0K Feb 11 03:05 [01;34mmedia[0m
+drwxr-xr-x   7 root root 4.0K Mar 10 16:21 [01;34mmnt[0m
+drwxr-xr-x   2 root root 4.0K Feb 11 03:05 [01;34mopt[0m
+dr-xr-xr-x 182 root root    0 Mar 12 20:59 [01;34mproc[0m
+drwx------   2 root root 4.0K Feb 11 03:06 [01;34mroot[0m
+drwxr-xr-x   6 root root  120 Mar 12 20:59 [01;34mrun[0m
+lrwxrwxrwx   1 root root    8 Feb 11 03:05 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x   8 root root 4.0K Feb 11 03:06 [01;34msnap[0m
+drwxr-xr-x   2 root root 4.0K Feb 11 03:05 [01;34msrv[0m
+dr-xr-xr-x  11 root root    0 Mar 12 13:15 [01;34msys[0m
+drwxrwxrwt   2 root root 4.0K Mar 12 20:59 [30;42mtmp[0m
+drwxr-xr-x  14 root root 4.0K Feb 11 03:05 [01;34musr[0m
+drwxr-xr-x  13 root root 4.0K Feb 11 03:06 [01;34mvar[0m
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls -l --auh[Kthor
+[?2004l
+total 1472
+lrwxrwxrwx   1 root root root       7 Feb 11 03:05 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+drwxr-xr-x   2 root root root    4096 Apr 18  2022 [01;34mboot[0m
+drwxr-xr-x   9 root root root    3000 Mar 12 13:15 [01;34mdev[0m
+drwxr-xr-x  73 root root root    4096 Mar 12 20:59 [01;34metc[0m
+drwxr-xr-x   3 root root root    4096 Feb 18 20:23 [01;34mhome[0m
+-rwxr-xr-x   2 root root root 1440152 May  7  2022 [01;32minit[0m
+lrwxrwxrwx   1 root root root       7 Feb 11 03:05 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx   1 root root root       9 Feb 11 03:05 [01;36mlib32[0m -> [01;34musr/lib32[0m
+lrwxrwxrwx   1 root root root       9 Feb 11 03:05 [01;36mlib64[0m -> [01;34musr/lib64[0m
+lrwxrwxrwx   1 root root root      10 Feb 11 03:05 [01;36mlibx32[0m -> [01;34musr/libx32[0m
+drwx------   2 root root root   16384 Apr 10  2019 [01;34mlost+found[0m
+drwxr-xr-x   2 root root root    4096 Feb 11 03:05 [01;34mmedia[0m
+drwxr-xr-x   7 root root root    4096 Mar 10 16:21 [01;34mmnt[0m
+drwxr-xr-x   2 root root root    4096 Feb 11 03:05 [01;34mopt[0m
+dr-xr-xr-x 182 root root root       0 Mar 12 20:59 [01;34mproc[0m
+drwx------   2 root root root    4096 Feb 11 03:06 [01;34mroot[0m
+drwxr-xr-x   6 root root root     120 Mar 12 20:59 [01;34mrun[0m
+lrwxrwxrwx   1 root root root       8 Feb 11 03:05 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x   8 root root root    4096 Feb 11 03:06 [01;34msnap[0m
+drwxr-xr-x   2 root root root    4096 Feb 11 03:05 [01;34msrv[0m
+dr-xr-xr-x  11 root root root       0 Mar 12 13:15 [01;34msys[0m
+drwxrwxrwt   2 root root root    4096 Mar 12 20:59 [30;42mtmp[0m
+drwxr-xr-x  14 root root root    4096 Feb 11 03:05 [01;34musr[0m
+drwxr-xr-x  13 root root root    4096 Feb 11 03:06 [01;34mvar[0m
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls -rt
+[?2004l
+[0m[01;34mlost+found[0m  [01;36mbin[0m     [01;36mlib64[0m  [01;34msrv[0m    [01;34musr[0m   [01;34msnap[0m  [01;34msys[0m   [30;42mtmp[0m
+[01;34mboot[0m        [01;36msbin[0m    [01;36mlib32[0m  [01;34mopt[0m    [01;34mroot[0m  [01;34mhome[0m  [01;34mdev[0m   [01;34mrun[0m
+[01;32minit[0m        [01;36mlibx32[0m  [01;36mlib[0m    [01;34mmedia[0m  [01;34mvar[0m   [01;34mmnt[0m   [01;34mproc[0m  [01;34metc[0m
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls -lrt
+[?2004l
+total 1472
+drwx------   2 root root   16384 Apr 10  2019 [0m[01;34mlost+found[0m
+drwxr-xr-x   2 root root    4096 Apr 18  2022 [01;34mboot[0m
+-rwxr-xr-x   2 root root 1440152 May  7  2022 [01;32minit[0m
+lrwxrwxrwx   1 root root       7 Feb 11 03:05 [01;36mbin[0m -> [01;34musr/bin[0m
+lrwxrwxrwx   1 root root       8 Feb 11 03:05 [01;36msbin[0m -> [01;34musr/sbin[0m
+lrwxrwxrwx   1 root root      10 Feb 11 03:05 [01;36mlibx32[0m -> [01;34musr/libx32[0m
+lrwxrwxrwx   1 root root       9 Feb 11 03:05 [01;36mlib64[0m -> [01;34musr/lib64[0m
+lrwxrwxrwx   1 root root       9 Feb 11 03:05 [01;36mlib32[0m -> [01;34musr/lib32[0m
+lrwxrwxrwx   1 root root       7 Feb 11 03:05 [01;36mlib[0m -> [01;34musr/lib[0m
+drwxr-xr-x   2 root root    4096 Feb 11 03:05 [01;34msrv[0m
+drwxr-xr-x   2 root root    4096 Feb 11 03:05 [01;34mopt[0m
+drwxr-xr-x   2 root root    4096 Feb 11 03:05 [01;34mmedia[0m
+drwxr-xr-x  14 root root    4096 Feb 11 03:05 [01;34musr[0m
+drwx------   2 root root    4096 Feb 11 03:06 [01;34mroot[0m
+drwxr-xr-x  13 root root    4096 Feb 11 03:06 [01;34mvar[0m
+drwxr-xr-x   8 root root    4096 Feb 11 03:06 [01;34msnap[0m
+drwxr-xr-x   3 root root    4096 Feb 18 20:23 [01;34mhome[0m
+drwxr-xr-x   7 root root    4096 Mar 10 16:21 [01;34mmnt[0m
+dr-xr-xr-x  11 root root       0 Mar 12 13:15 [01;34msys[0m
+drwxr-xr-x   9 root root    3000 Mar 12 13:15 [01;34mdev[0m
+dr-xr-xr-x 182 root root       0 Mar 12 20:59 [01;34mproc[0m
+drwxrwxrwt   2 root root    4096 Mar 12 20:59 [30;42mtmp[0m
+drwxr-xr-x   6 root root     120 Mar 12 20:59 [01;34mrun[0m
+drwxr-xr-x  73 root root    4096 Mar 12 20:59 [01;34metc[0m
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls -F
+[?2004l
+[0m[01;36mbin[0m@   [01;34metc[0m/   [01;36mlib[0m@    [01;36mlibx32[0m@      [01;34mmnt[0m/   [01;34mroot[0m/  [01;34msnap[0m/  [30;42mtmp[0m/
+[01;34mboot[0m/  [01;34mhome[0m/  [01;36mlib32[0m@  [01;34mlost+found[0m/  [01;34mopt[0m/   [01;34mrun[0m/   [01;34msrv[0m/   [01;34musr[0m/
+[01;34mdev[0m/   [01;32minit[0m*  [01;36mlib64[0m@  [01;34mmedia[0m/       [01;34mproc[0m/  [01;36msbin[0m@  [01;34msys[0m/   [01;34mvar[0m/
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ pwd
+[?2004l
+/
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ cf[Kd home
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ man ls
+[?2004l
+[?1049h[22;0;0t[?1h=
+LS(1)                        User Commands                       LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information about the FILEs (the current directory by de‐[m
+       fault).  Sort entries alphabetically if none of  [1m-cftuvSUX[0m  nor[m
+       [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short op‐[m
+       tions too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              with [1m-l[0m, scale sizes by SIZE when printing  them;  e.g.,[m
+              '--block-size=M'; see SIZE format below[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K
+[K[?1l>[?1049l[23;0;0t[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ mkdir project
+[?2004l
+mkdir: cannot create directory ‘project’: Permission denied
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ [7mmkdir "$HOME/bin"[27mmkdir "$HOME/bin"
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ ls
+[?2004l
+[0m[01;34msagnik[0m
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ ls
+[?2004l
+[0m[01;36mbin[0m   [01;34metc[0m   [01;36mlib[0m    [01;36mlibx32[0m      [01;34mmnt[0m   [01;34mroot[0m  [01;34msnap[0m  [30;42mtmp[0m
+[01;34mboot[0m  [01;34mhome[0m  [01;36mlib32[0m  [01;34mlost+found[0m  [01;34mopt[0m   [01;34mrun[0m   [01;34msrv[0m   [01;34musr[0m
+[01;34mdev[0m   [01;32minit[0m  [01;36mlib64[0m  [01;34mmedia[0m       [01;34mproc[0m  [01;36msbin[0m  [01;34msys[0m   [01;34mvar[0m
+[?2004h]0;sagnik@TIGER01038: / [01;32msagnik@TIGER01038[00m:[01;34m/[00m$ cd home
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /home [01;32msagnik@TIGER01038[00m:[01;34m/home[00m$ cd sagnik
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ cd bin[K[K[K[K[K[K cd sagnik[2Phomels[Kcd ..[3Plsmkdir "$HOME/bin"[4Pproject
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ ls
+[?2004l
+[0m[01;34mbin[0m  [01;34mproject[0m  unix_session
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ cd project
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ ls -F
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ text_file.txt
+[?2004l
+text_file.txt: command not found
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ [7mnano draft.txt[27mnano draft.txt
+[?2004l
+[?2004h[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;31H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                    draft.txt                             [1;71H(B[m
+[33d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[33;57H(B[0;7m^T(B[m Execute
+[34d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify
+[2d[?12l[?25h[?25l[1;45H(B[0;7m*[71G(B[m[?12l[?25h
+[2dq[?25l[?12l[?25h[K[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hw[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hl[?25l[?12l[?25hd[?25l[?12l[?25hT[?25l[?12l[?25h [?25l[?12l[?25h^[?25l[?12l[?25hX[?25l[?12l[?25h [?25l[?12l[?25h [?25l
+[32d[K[?12l[?25h[2;12HX[?25l[?12l[?25h [?25l[33;15H    (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append  [55G(B[0;7mM-B(B[m Backup File[34;2H(B[0;7mC(B[m Cancel         (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m Browse[K
+[32d(B[0;7mFile Name to Write: draft.txt                                           [32;30H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;45H(B[0;7m [71G(B[m[32;29H(B[0;7m[ Wrote 1 line ](B[m[33;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[55G  (B[0;7m^T(B[m Execute[K[34;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste      (B[0;7m^J(B[m Justify[?12l[?25h[2;12H[?25l
+[32d[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ ls
+[?2004l
+draft.txt
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ touch my_file.txt
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ ls -l
+[?2004l
+total 4
+-rw-r--r-- 1 sagnik sagnik 12 Mar 12 21:20 draft.txt
+-rw-r--r-- 1 sagnik sagnik  0 Mar 12 21:21 my_file.txt
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ ls -ltouch my_file.txt[C[1P my_file.txt[1P my_file.txt[1P my_file.txt[1P my_file.txt[1P my_file.txtr my_file.txtm my_file.txt
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ ls
+[?2004l
+draft.txt
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ [7mcd ~/Desktop/shell-lesson-data/exercise-dat[27m[7ma[27m[7m/writing[27m[A
+]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ cd ~/Desktop/shell-lesson-data/exercise-data/writing
+[?2004l
+bash: cd: /home/sagnik/Desktop/shell-lesson-data/exercise-data/writing: No such file or directory
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ [7mmv thesis/draft.txt thesis/quotes.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmv thesis/draft.txt thesis/quotes.txt
+[?2004l
+mv: cannot stat 'thesis/draft.txt': No such file or directory
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ ls
+[?2004l
+draft.txt
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ [7mmv thesis/draft.txt thesis/quotes.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmv thesis/draft.txt thesis/quotes.txt[1Pquotes.txt[1Pquotes.txt[1Pquotes.txt[1Pquotes.txt[1Pquotes.txt[1Pquotes.txt[1Pquotes.txt[1P[1P[1P[1P[1P[1P[1P
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ ls
+[?2004l
+quotes.txt
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ pwd
+[?2004l
+/home/sagnik/project
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ mk[K[Kcd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ mkdir thesis
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ ls
+[?2004l
+[0m[01;34mbin[0m  [01;34mproject[0m  [01;34mthesis[0m  unix_session
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ [7mcp quotes.txt thesis/quotations.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp quotes.txt thesis/quotations.txt[1@p[1@r[1@o[1@j[1@e[1@c[1@t[1@/
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ cd thesis
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ ls
+[?2004l
+quotations.txt
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ pwd
+[?2004l
+/home/sagnik/thesis
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ rm -i
+[?2004l
+rm: missing operand
+Try 'rm --help' for more information.
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ cp quotations.txt backup_[K.txt
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ ls
+[?2004l
+backup.txt  quotations.txt
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ lscp quotations.txt backup.txtrm -i[K backp[Kup.txt
+[?2004l
+rm: remove regular file 'backup.txt'? y
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ ls
+[?2004l
+quotations.txt
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ lsrm -i backup.txtls[Kcp quotations.txt backup.txt1.txt[C[C[C[C backup2.txt
+[?2004l
+cp: target 'backup2.txt' is not a directory
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ ls
+[?2004l
+quotations.txt
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ ls qu*.txt
+[?2004l
+quotations.txt
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ ls qu*.txt[1P*.txto*.txt
+[?2004l
+ls: cannot access 'qo*.txt': No such file or directory
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ *
+[?2004l
+quotations.txt: command not found
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ .
+[?2004l
+bash: .: filename argument required
+.: usage: . filename [arguments]
+[?2004h]0;sagnik@TIGER01038: ~/thesis [01;32msagnik@TIGER01038[00m:[01;34m~/thesis[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ ls
+[?2004l
+[0m[01;34mbin[0m  [01;34mproject[0m  [01;34mthesis[0m  unix_session
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ cd project
+[?2004l
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ ls
+[?2004l
+quotes.txt
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ wv [K[Kc quotes.pdb
+[?2004l
+wc: quotes.pdb: No such file or directory
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ wc quotes.pdb[K[K[Ktxt
+[?2004l
+ 1  2 12 quotes.txt
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ wc *.txt
+[?2004l
+ 1  2 12 quotes.txt
+[?2004h]0;sagnik@TIGER01038: ~/project [01;32msagnik@TIGER01038[00m:[01;34m~/project[00m$ exit
+[?2004l
+exit
+
+Script done on 2023-03-12 22:00:44+05:30 [COMMAND_EXIT_CODE="0"]
+
+Script started on 2023-03-12 22:05:18+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="148" LINES="35"]
+[?2004h]0;sagnik@TIGER01038: ~ [01;32msagnik@TIGER01038[00m:[01;34m~[00m$ cd [7m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ cd [7mexercise-data/writing[27mexercise-data/writing
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mcat haiku.txt[27mcat haiku.txt
+[?2004l
+The Tao that is seen
+Is not the true Tao, until
+You bring fresh toner.
+
+With searching comes loss
+and the presence of absence:
+"My Thesis" not found.
+
+Yesterday it worked
+Today it is not working
+Software is like that.
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ 
+[K]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mg[27m
+
+[7mrep not haiku.txt[27m[A
+]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ g
+
+rep not haiku.txt
+[?2004l
+Is [01;31m[Knot[m[K the true Tao, until
+"My Thesis" [01;31m[Knot[m[K found.
+Today it is [01;31m[Knot[m[K working
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep The haiku.txt[27mgrep The haiku.txt
+[?2004l
+[01;31m[KThe[m[K Tao that is seen
+"My [01;31m[KThe[m[Ksis" not found.
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -w The haiku.txt[27mgrep -w The haiku.txt
+[?2004l
+[01;31m[KThe[m[K Tao that is seen
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -w "is not" haiku.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -w "is not" haiku.txt
+[?2004l
+Today it [01;31m[Kis not[m[K working
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -n "it" haiku.txt[27mgrep -n "it" haiku.txt
+[?2004l
+[32m[K5[m[K[36m[K:[m[KW[01;31m[Kit[m[Kh searching comes loss
+[32m[K9[m[K[36m[K:[m[KYesterday [01;31m[Kit[m[K worked
+[32m[K10[m[K[36m[K:[m[KToday [01;31m[Kit[m[K is not working
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -n -w -i "the" haiku.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -n -w -i "the" haiku.txt
+[?2004l
+[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -n -w -v "the" haiku.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -n -w -v "the" haiku.txt
+[?2004l
+[32m[K1[m[K[36m[K:[m[KThe Tao that is seen
+[32m[K3[m[K[36m[K:[m[KYou bring fresh toner.
+[32m[K4[m[K[36m[K:[m[K
+[32m[K5[m[K[36m[K:[m[KWith searching comes loss
+[32m[K7[m[K[36m[K:[m[K"My Thesis" not found.
+[32m[K8[m[K[36m[K:[m[K
+[32m[K9[m[K[36m[K:[m[KYesterday it worked
+[32m[K10[m[K[36m[K:[m[KToday it is not working
+[32m[K11[m[K[36m[K:[m[KSoftware is like that.
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -r Yesterday .[27mgrep -r Yesterday .
+[?2004l
+[35m[K./haiku.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K it worked
+[35m[K./LittleWomen.txt[m[K[36m[K:[m[K"[01;31m[KYesterday[m[K, when Aunt was asleep and I was trying to be as still as a
+[35m[K./LittleWomen.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K at dinner, when an Austrian officer stared at us and then
+[35m[K./LittleWomen.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K was a quiet day spent in teaching, sewing, and writing in my
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep --help[27mgrep --help
+[?2004l
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Search for PATTERNS in each FILE.
+Example: grep -i 'hello world' menu.h main.c
+PATTERNS can contain multiple patterns separated by newlines.
+
+Pattern selection and interpretation:
+  -E, --extended-regexp     PATTERNS are extended regular expressions
+  -F, --fixed-strings       PATTERNS are strings
+  -G, --basic-regexp        PATTERNS are basic regular expressions
+  -P, --perl-regexp         PATTERNS are Perl regular expressions
+  -e, --regexp=PATTERNS     use PATTERNS for matching
+  -f, --file=FILE           take PATTERNS from FILE
+  -i, --ignore-case         ignore case distinctions in patterns and data
+      --no-ignore-case      do not ignore case distinctions (default)
+  -w, --word-regexp         match only whole words
+  -x, --line-regexp         match only whole lines
+  -z, --null-data           a data line ends in 0 byte, not newline
+
+Miscellaneous:
+  -s, --no-messages         suppress error messages
+  -v, --invert-match        select non-matching lines
+  -V, --version             display version information and exit
+      --help                display this help text and exit
+
+Output control:
+  -m, --max-count=NUM       stop after NUM selected lines
+  -b, --byte-offset         print the byte offset with output lines
+  -n, --line-number         print line number with output lines
+      --line-buffered       flush output on every line
+  -H, --with-filename       print file name with output lines
+  -h, --no-filename         suppress the file name prefix on output
+      --label=LABEL         use LABEL as the standard input file name prefix
+  -o, --only-matching       show only nonempty parts of lines that match
+  -q, --quiet, --silent     suppress all normal output
+      --binary-files=TYPE   assume that binary files are TYPE;
+                            TYPE is 'binary', 'text', or 'without-match'
+  -a, --text                equivalent to --binary-files=text
+  -I                        equivalent to --binary-files=without-match
+  -d, --directories=ACTION  how to handle directories;
+                            ACTION is 'read', 'recurse', or 'skip'
+  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is 'read' or 'skip'
+  -r, --recursive           like --directories=recurse
+  -R, --dereference-recursive  likewise, but follow all symlinks
+      --include=GLOB        search only files that match GLOB (a file pattern)
+      --exclude=GLOB        skip files that match GLOB
+      --exclude-from=FILE   skip files that match any file pattern from FILE
+      --exclude-dir=GLOB    skip directories that match GLOB
+  -L, --files-without-match  print only names of FILEs with no selected lines
+  -l, --files-with-matches  print only names of FILEs with selected lines
+  -c, --count               print only a count of selected lines per FILE
+  -T, --initial-tab         make tabs line up (if needed)
+  -Z, --null                print 0 byte after FILE name
+
+Context control:
+  -B, --before-context=NUM  print NUM lines of leading context
+  -A, --after-context=NUM   print NUM lines of trailing context
+  -C, --context=NUM         print NUM lines of output context
+  -NUM                      same as --context=NUM
+      --group-separator=SEP  print SEP on line between matches with context
+      --no-group-separator  do not print separator for matches with context
+      --color[=WHEN],
+      --colour[=WHEN]       use markers to highlight the matching strings;
+                            WHEN is 'always', 'never', or 'auto'
+  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)
+
+When FILE is '-', read standard input.  With no FILE, read '.' if
+recursive, '-' otherwise.  With fewer than two FILEs, assume -h.
+Exit status is 0 if any line is selected, 1 otherwise;
+if any error occurs and -q is not given, the exit status is 2.
+
+Report bugs to: bug-grep@gnu.org
+GNU grep home page: <https://www.gnu.org/software/grep/>
+General help using GNU software: <https://www.gnu.org/gethelp/>
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -w "of" haiku.txt[27mgrep -w "of" haiku.txt
+[?2004l
+and the presence [01;31m[Kof[m[K absence:
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -E "^.o" haiku.txt[27mgrep -E "^.o" haiku.txt
+[?2004l
+[01;31m[KYo[m[Ku bring fresh toner.
+[01;31m[KTo[m[Kday it is not working
+[01;31m[KSo[m[Kftware is like that.
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7m2012-11-05,22[27m2012-11-05,22
+[?2004l
+2012-11-05,22: command not found
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7m1.txt[27m1.txt
+[?2004l
+1.txt: command not found
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -w $1 -r $2[27mgrep -w $1 -r $2
+[?2004l
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,[27m[7m3[27m[7m > $1.txt[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,3 > $1.txt
+[?2004l
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mgrep -w $1 -r $2[27mgrep -w $1 -r $2
+[?2004l
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ ls
+[?2004l
+[0m[01;32mLittleWomen.txt[0m  [01;32mhaiku.txt[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mfor sis in Jo Meg Beth Amy[27m
+
+[7mdo[27m
+
+[7m    echo $sis:[27m
+
+[7m    grep -ow $sis LittleWomen.txt | wc -l[27m
+
+[7mdone[27m
+
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor sis in Jo Meg Beth Amy
+
+do
+
+    echo $sis:
+
+    grep -ow $sis LittleWomen.txt | wc -l
+
+done
+
+[A
+[?2004l
+Jo:
+1355
+Meg:
+683
+Beth:
+459
+Amy:
+645
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mshell-lesson-data/exercise-data[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cshell-lesson-data/exercise-data
+[?2004l
+bash: shell-lesson-data/exercise-data: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mshell-lesson-data/exercise-data[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cshell-lesson-data/exercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pxercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pexercise-data[1Pxercise-data[1Pexercise-data[1Pexercise-data      
+[?2004l
+exercise-data: command not found
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ [7mfind .[27mfind .
+[?2004l
+.
+./.txt
+./haiku.txt
+./LittleWomen.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/writing[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd ..find .
+[?2004l
+.
+./animal-counts
+./animal-counts/animals.csv
+./creatures
+./creatures/basilisk.dat
+./creatures/minotaur.dat
+./creatures/unicorn.dat
+./numbers.txt
+./proteins
+./proteins/cubane.pdb
+./proteins/ethane.pdb
+./proteins/methane.pdb
+./proteins/octane.pdb
+./proteins/pentane.pdb
+./proteins/propane.pdb
+./writing
+./writing/.txt
+./writing/haiku.txt
+./writing/LittleWomen.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ [7mfind . -type d[27mfind . -type d
+[?2004l
+.
+./animal-counts
+./creatures
+./proteins
+./writing
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ [7mfind . -type f[27mfind . -type f
+[?2004l
+./animal-counts/animals.csv
+./creatures/basilisk.dat
+./creatures/minotaur.dat
+./creatures/unicorn.dat
+./numbers.txt
+./proteins/cubane.pdb
+./proteins/ethane.pdb
+./proteins/methane.pdb
+./proteins/octane.pdb
+./proteins/pentane.pdb
+./proteins/propane.pdb
+./writing/.txt
+./writing/haiku.txt
+./writing/LittleWomen.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ [7mwc -l $(find . -name "*.txt")[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l $(find . -name "*.txt")
+[?2004l
+      5 ./numbers.txt
+      0 ./writing/.txt
+     11 ./writing/haiku.txt
+  21022 ./writing/LittleWomen.txt
+  21038 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ [7mwc -l ./writing/LittleWomen.txt ./writing/haiku.txt ./num[27m[7mb[27m[7mers.txt[27m[A[C[C[C[C[C[C[Cwc -l ./writing/LittleWomen.txt ./writing/haiku.txt ./numbers.txt
+[?2004l
+  21022 ./writing/LittleWomen.txt
+     11 ./writing/haiku.txt
+      5 ./numbers.txt
+  21038 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ [7mgrep "searching" $(find . -name "*.txt")[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep "searching" $(find . -name "*.txt")
+[?2004l
+[35m[K./writing/haiku.txt[m[K[36m[K:[m[KWith [01;31m[Ksearching[m[K comes loss
+[35m[K./writing/LittleWomen.txt[m[K[36m[K:[m[Ksitting on the top step, affected to be [01;31m[Ksearching[m[K for her book, but was
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ [7mwc -l $(find . -name "*.dat") | sort -n[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l $(find . -name "*.dat") | sort -n
+[?2004l
+ 163 ./creatures/basilisk.dat
+ 163 ./creatures/minotaur.dat
+ 163 ./creatures/unicorn.dat
+ 489 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ ls
+[?2004l
+[0m[34;42manimal-counts[0m  [34;42mcreatures[0m  [01;32mnumbers.txt[0m  [34;42mproteins[0m  [34;42mwriting[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ [7mexercise-data/proteins[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexercise-data/proteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins[1Pproteins      cproteinsdproteins proteins
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ ls
+[?2004l
+[0m[01;32mcubane.pdb[0m  [01;32mmethane.pdb[0m  [01;32mpentane.pdb[0m
+[01;32methane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ wc cubar[Kne.pdb
+[?2004l
+  20  156 1158 cubane.pdb
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mwc *.pdb[27mwc *.pdb
+[?2004l
+  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 107  819 6081 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mwc -l *.pdb > lengths.txt[27mwc -l *.pdb > lengths.txt
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mls lengths.txt[27mls lengths.txt
+[?2004l
+[0m[01;32mlengths.txt[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mcat lengths.txt[27mcat lengths.txt
+[?2004l
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7msort -n lengths.txt[27msort -n lengths.txt
+[?2004l
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7msort -n lengths.txt > lengths.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -n lengths.txt > lengths.txt
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mecho The echo command prints text[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho The echo command prints text
+[?2004l
+The echo command prints text
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mecho hello > testfile01.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho hello > testfile01.txt
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mhead -n 3 animals.csv > animals-subset.csv[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead -n 3 animals.csv > animals-subset.csv
+[?2004l
+head: cannot open 'animals.csv' for reading: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd anik[Kmal-xc[K[Kcp[Kounts
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ cd animal-counts..[Khead -n 3 animals.csv > animals-subset.csv
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ ls
+[?2004l
+[0m[01;32manimals-subset.csv[0m  [01;32manimals.csv[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ [7mtail -n 2 animals.csv >> animals-subset.csv[27m 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctail -n 2 animals.csv >> animals-subset.csv 
+[A
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ [7msort -n lengths.txt | head -n 1[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -n lengths.txt | head -n 1
+[?2004l
+sort: cannot read: lengths.txt: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ sort -n lengths.txt | head -n 1
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctail -n 2 animals.csv >> animals-subset.csv 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead -n 3 animals.csv > animals-subset.csv
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pcd animal-counts..[K
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd proteins
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ cd proteins..[Ksort -n lengths.txt | head -n 1
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mwc -l * | sort -n | head -n 1-3[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l * | sort -n | head -n 1-3
+[?2004l
+head: invalid number of lines: ‘1-3’
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ history
+[?2004l
+    1  script -a ~/my_unix_session
+    2  conda --version
+    3  sudo apt get install git
+    4  ls
+    5  pwd
+    6  ls -F
+    7  ls --help
+    8  man ls
+    9  exit
+   10  ls
+   11  cd ..
+   12  script -a ~/my_unix_session
+   13  pwd
+   14  ls
+   15  ls -F
+   16  ls --help
+   17  ls -a
+   18  ls -A
+   19  ls --author
+   20  ls -l --author
+   21  ls -A --author
+   22  cd ..
+   23  ls -a
+   24  ls --author
+   25  ls -l --author
+   26  ls -lh
+   27  ls -l --author
+   28  ls -rt
+   29  ls -lrt
+   30  ls -F
+   31  pwd
+   32  cd home
+   33  man ls
+   34  mkdir project
+   35  mkdir "$HOME/bin"
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd home
+   40  cd sagnik
+   41  mkdir project
+   42  ls
+   43  cd project
+   44  ls -F
+   45  text_file.txt
+   46  nano draft.txt
+   47  ls
+   48  touch my_file.txt
+   49  ls -l
+   50  rm my_file.txt
+   51  ls
+   52  cd ~/Desktop/shell-lesson-data/exercise-data/writing
+   53  mv thesis/draft.txt thesis/quotes.txt
+   54  ls
+   55  mv draft.txt quotes.txt
+   56  ls
+   57  pwd
+   58  cd ..
+   59  mkdir thesis
+   60  ls
+   61  cp project/quotes.txt thesis/quotations.txt
+   62  cd thesis
+   63  ls
+   64  pwd
+   65  rm -i
+   66  cp quotations.txt backup.txt
+   67  ls
+   68  rm -i backup.txt
+   69  ls
+   70  cp quotations.txt backup1.txt backup2.txt
+   71  ls
+   72  ls qu*.txt
+   73  ls qo*.txt
+   74  *
+   75  .
+   76  cd ..
+   77  ls
+   78  cd project
+   79  ls
+   80  wc quotes.pdb
+   81  wc quotes.txt
+   82  wc *.txt
+   83  exit
+   84  ls
+   85  cd ..
+   86  script -a ~/unix_session
+   87  cd /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data
+   88  cd exercise-data/writing
+   89  cat haiku.txt
+   90  grep not haiku.txt
+   91  grep The haiku.txt
+   92  grep -w The haiku.txt
+   93  grep -w "is not" haiku.txt
+   94  grep -n "it" haiku.txt
+   95  grep -n -w -i "the" haiku.txt
+   96  grep -n -w -v "the" haiku.txt
+   97  grep -r Yesterday .
+   98  grep --help
+   99  grep -w "of" haiku.txt
+  100  grep -E "^.o" haiku.txt
+  101  2012-11-05,22
+  102  1.txt
+  103  grep -w $1 -r $2
+  104  grep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,3 > $1.txt
+  105  grep -w $1 -r $2
+  106  ls
+  107  for sis in Jo Meg Beth Amy; do     echo $sis:;     grep -ow $sis LittleWomen.txt | wc -l; done
+  108  shell-lesson-data/exercise-data
+  109  exercise-data
+  110  find .
+  111  cd ..
+  112  find .
+  113  find . -type d
+  114  find . -type f
+  115  wc -l $(find . -name "*.txt")
+  116  wc -l ./writing/LittleWomen.txt ./writing/haiku.txt ./numbers.txt
+  117  grep "searching" $(find . -name "*.txt")
+  118  wc -l $(find . -name "*.dat") | sort -n
+  119  ls
+  120  cd proteins
+  121  ls
+  122  wc cubane.pdb
+  123  wc *.pdb
+  124  wc -l *.pdb > lengths.txt
+  125  ls lengths.txt
+  126  cat lengths.txt
+  127  sort -n lengths.txt
+  128  sort -n lengths.txt > lengths.txt
+  129  echo The echo command prints text
+  130  echo hello > testfile01.txt
+  131  head -n 3 animals.csv > animals-subset.csv
+  132  cd ..
+  133  cd animal-counts
+  134  head -n 3 animals.csv > animals-subset.csv
+  135  ls
+  136  tail -n 2 animals.csv >> animals-subset.csv
+  137  sort -n lengths.txt | head -n 1
+  138  cd ..
+  139  cd proteins
+  140  sort -n lengths.txt | head -n 1
+  141  wc -l * | sort -n | head -n 1-3
+  142  history
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ [7mcd molecules[27mcd molecules
+[?2004l
+bash: cd: molecules: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ find .
+[?2004l
+.
+./animal-counts
+./animal-counts/animals-subset.csv
+./animal-counts/animals.csv
+./creatures
+./creatures/basilisk.dat
+./creatures/minotaur.dat
+./creatures/unicorn.dat
+./numbers.txt
+./proteins
+./proteins/animals-subset.csv
+./proteins/cubane.pdb
+./proteins/ethane.pdb
+./proteins/lengths.txt
+./proteins/methane.pdb
+./proteins/octane.pdb
+./proteins/pentane.pdb
+./proteins/propane.pdb
+./proteins/testfile01.txt
+./writing
+./writing/.txt
+./writing/haiku.txt
+./writing/LittleWomen.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd animal-count
+[?2004l
+bash: cd: animal-count: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd animal-counts
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ [7mcat animals.csv | head -n 5 | tail -n 3 | s[27m[7mo[27m[7mrt -r > final.txt[27m[A[C[C[C[C[C[C[C[C[C[C[Ccat animals.csv | head -n 5 | tail -n 3 | sort -r > final.txt
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ [7mcut -d , -f 2 animals.csv[27mcut -d , -f 2 animals.csv
+[?2004l
+deer
+rabbit
+raccoon
+rabbit
+deer
+fox
+rabbit
+bear
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ [7msort animals.csv | uniq -c[27msort animals.csv | uniq -c
+[?2004l
+      1 2012-11-05,deer,5
+      1 2012-11-05,rabbit,22
+      1 2012-11-05,raccoon,7
+      1 2012-11-06,deer,2
+      1 2012-11-06,fox,4
+      1 2012-11-06,rabbit,19
+      1 2012-11-07,bear,1
+      1 2012-11-07,rabbit,16
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ [7mcut -d, -f 2 animals.csv | sort | uniq -c[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccut -d, -f 2 animals.csv | sort | uniq -c
+[?2004l
+      1 bear
+      2 deer
+      1 fox
+      3 rabbit
+      1 raccoon
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ [7mcut -d, -f 2 animals.csv | sort | uniq -c |[27m[7m [27m[7mwc -l[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccut -d, -f 2 animals.csv | sort | uniq -c | wc -l
+[?2004l
+5
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ [7mcd north-pacific-gyre[27mcd north-pacific-gyre
+[?2004l
+bash: cd: north-pacific-gyre: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/animal-counts[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ find.
+[?2004l
+Command 'find.' not found, did you mean:
+  command 'findv' from deb polylib-utils (5.22.5-4+dfsg)
+  command 'findg' from deb ncl-ncarg (6.6.2-10build2)
+  command 'find' from deb findutils (4.8.0-1ubuntu3)
+Try: sudo apt install <deb name>
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ find. .
+[?2004l
+.
+./animal-counts
+./animal-counts/animals-subset.csv
+./animal-counts/animals.csv
+./animal-counts/final.txt
+./creatures
+./creatures/basilisk.dat
+./creatures/minotaur.dat
+./creatures/unicorn.dat
+./numbers.txt
+./proteins
+./proteins/animals-subset.csv
+./proteins/cubane.pdb
+./proteins/ethane.pdb
+./proteins/lengths.txt
+./proteins/methane.pdb
+./proteins/octane.pdb
+./proteins/pentane.pdb
+./proteins/propane.pdb
+./proteins/testfile01.txt
+./writing
+./writing/.txt
+./writing/haiku.txt
+./writing/LittleWomen.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ cd ..
+[Cfind .
+[?2004l
+.
+./exercise-data
+./exercise-data/animal-counts
+./exercise-data/animal-counts/animals-subset.csv
+./exercise-data/animal-counts/animals.csv
+./exercise-data/animal-counts/final.txt
+./exercise-data/creatures
+./exercise-data/creatures/basilisk.dat
+./exercise-data/creatures/minotaur.dat
+./exercise-data/creatures/unicorn.dat
+./exercise-data/numbers.txt
+./exercise-data/proteins
+./exercise-data/proteins/animals-subset.csv
+./exercise-data/proteins/cubane.pdb
+./exercise-data/proteins/ethane.pdb
+./exercise-data/proteins/lengths.txt
+./exercise-data/proteins/methane.pdb
+./exercise-data/proteins/octane.pdb
+./exercise-data/proteins/pentane.pdb
+./exercise-data/proteins/propane.pdb
+./exercise-data/proteins/testfile01.txt
+./exercise-data/writing
+./exercise-data/writing/.txt
+./exercise-data/writing/haiku.txt
+./exercise-data/writing/LittleWomen.txt
+./north-pacific-gyre
+./north-pacific-gyre/goodiff.sh
+./north-pacific-gyre/goostats.sh
+./north-pacific-gyre/NENE01729A.txt
+./north-pacific-gyre/NENE01729B.txt
+./north-pacific-gyre/NENE01736A.txt
+./north-pacific-gyre/NENE01751A.txt
+./north-pacific-gyre/NENE01751B.txt
+./north-pacific-gyre/NENE01812A.txt
+./north-pacific-gyre/NENE01843A.txt
+./north-pacific-gyre/NENE01843B.txt
+./north-pacific-gyre/NENE01971Z.txt
+./north-pacific-gyre/NENE01978A.txt
+./north-pacific-gyre/NENE01978B.txt
+./north-pacific-gyre/NENE02018B.txt
+./north-pacific-gyre/NENE02040A.txt
+./north-pacific-gyre/NENE02040B.txt
+./north-pacific-gyre/NENE02040Z.txt
+./north-pacific-gyre/NENE02043A.txt
+./north-pacific-gyre/NENE02043B.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ [7mcd north-pacific-gyre[27m
+[Ccd north-pacific-gyre
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mwc -l *.txt[27mwc -l *.txt
+[?2004l
+  300 NENE01729A.txt
+  300 NENE01729B.txt
+  300 NENE01736A.txt
+  300 NENE01751A.txt
+  300 NENE01751B.txt
+  300 NENE01812A.txt
+  300 NENE01843A.txt
+  300 NENE01843B.txt
+  300 NENE01971Z.txt
+  300 NENE01978A.txt
+  300 NENE01978B.txt
+  240 NENE02018B.txt
+  300 NENE02040A.txt
+  300 NENE02040B.txt
+  300 NENE02040Z.txt
+  300 NENE02043A.txt
+  300 NENE02043B.txt
+ 5040 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mwc -l *.txt | sort -n | head -n 5[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l *.txt | sort -n | head -n 5
+[?2004l
+  240 NENE02018B.txt
+  300 NENE01729A.txt
+  300 NENE01729B.txt
+  300 NENE01736A.txt
+  300 NENE01751A.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mwc -l *.txt | sort -n | tail -n 5[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l *.txt | sort -n | tail -n 5
+[?2004l
+  300 NENE02040B.txt
+  300 NENE02040Z.txt
+  300 NENE02043A.txt
+  300 NENE02043B.txt
+ 5040 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mls *Z.txt[27mls *Z.txt
+[?2004l
+[0m[01;32mNENE01971Z.txt[0m  [01;32mNENE02040Z.txt[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ cd [7mexercise-data/creatures[27m
+[C[C[C[Cexercise-data/creatures
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ [7mhead -n 5 basilisk.dat minotaur.dat unicorn.dat[27m 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead -n 5 basilisk.dat minotaur.dat unicorn.dat 
+[A
+[?2004l
+==> basilisk.dat <==
+COMMON NAME: basilisk
+CLASSIFICATION: basiliscus vulgaris
+UPDATED: 1745-05-02
+CCCCAACGAG
+GAAACAGATC
+
+==> minotaur.dat <==
+COMMON NAME: minotaur
+CLASSIFICATION: bos hominus
+UPDATED: 1765-02-17
+CCCGAAGGAC
+CGACATCTCT
+
+==> unicorn.dat <==
+COMMON NAME: unicorn
+CLASSIFICATION: equus monoceros
+UPDATED: 1738-11-24
+AGCCGGGTCG
+CTTTACCTTA
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ [7mfor thing in list_of_things[27m
+
+[7mdo[27m
+
+[7m    operation_using $thing    # Indentation within the loop is not requi[27m[7mr[27m[7med, but aids legibility [27m
+
+[7mdone[27m
+
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor thing in list_of_things
+
+do
+
+    operation_using $thing    # Indentation within the loop is not required, but aids legibility
+
+done
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C                       
+ 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C done 
+
+[K
+
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C                                             
+
+
+[?2004l
+operation_using: command not found
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ [7mfor filename in basilisk.dat minotaur.dat unico[27m[7mr[27m[7mn.dat [27m
+
+[7m> do[27m
+
+[7m>     echo $filename[27m
+
+[7m>     head -n 2 $filename | tail -n 1[27m
+
+[7m> done[27m
+
+[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor filename in basilisk.dat minotaur.dat unicorn.dat
+
+> do
+
+>     echo $filename
+
+>     head -n 2 $filename | tail -n 1
+
+> done
+
+[A
+[?2004l
+bash: syntax error near unexpected token `>'
+-n: command not found
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ [7mfor filename in basilisk.dat minotaur.dat unico[27m[7mr[27m[7mn.dat [27m
+
+[7m> do[27m
+
+[7m>     echo $filename[27m
+
+[7m>     head -n 2 $filename | tail -n 1[27m
+
+[7m> done[27m
+
+[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor filename in basilisk.dat minotaur.dat unicorn.dat
+
+> do
+
+>     echo $filename
+
+>     head -n 2 $filename | tail -n 1
+
+> done[1Pdone
+[C
+[1Pdone
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C> done[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor filename in basilisk.dat minotaur.dat unicorn.dat 
+
+> do
+
+>     echo $filename
+
+>     head -n 2 $filename | tail -n 1
+
+done
+
+[A[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[1@ 
+[1P[A[C[C[C[C[1Pdo
+[1Pdo
+ [C[C
+
+[C[C[C[C[1P
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[C[C[C[C[1P
+[C
+
+
+[?2004l
+basilisk.dat
+CLASSIFICATION: basiliscus vulgaris
+minotaur.dat
+CLASSIFICATION: bos hominus
+unicorn.dat
+CLASSIFICATION: equus monoceros
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ do
+[?2004l
+bash: syntax error near unexpected token `do'
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ do
+[?2004l
+bash: syntax error near unexpected token `do'
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ [7mfor filename in basilisk.dat minotaur.dat unico[27m[7mr[27m[7mn.dat[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor filename in basilisk.dat minotaur.dat unicorn.dat
+[?2004l
+[?2004h> do
+[?2004l
+[?2004h> echo $filename
+[?2004l
+[?2004h> [7mhead -n 2 $filename | tail -n 1[27m
+[C[Chead -n 2 $filename | tail -n 1
+[?2004l
+[?2004h> done
+[?2004l
+basilisk.dat
+CLASSIFICATION: basiliscus vulgaris
+minotaur.dat
+CLASSIFICATION: bos hominus
+unicorn.dat
+CLASSIFICATION: equus monoceros
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ [7mfor temperature in basilisk.dat minotaur.dat un[27m[7mi[27m[7mcorn.dat[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor temperature in basilisk.dat minotaur.dat unicorn.dat
+[?2004l
+[?2004h> do
+[?2004l
+[?2004h> [7mhead -n 2 $temperature | tail -n 1[27m
+[C[Chead -n 2 $temperature | tail -n 1
+[?2004l
+[?2004h> done
+[?2004l
+CLASSIFICATION: basiliscus vulgaris
+CLASSIFICATION: bos hominus
+CLASSIFICATION: equus monoceros
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ [7mfor loop_variable in 0 1 2 3 4 5 6 7 8 9[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor loop_variable in 0 1 2 3 4 5 6 7 8 9
+[?2004l
+[?2004h> do [K
+[?2004l
+[?2004h> [7mecho $loop_variable[27m
+[C[Cecho $loop_variable
+[?2004l
+[?2004h> done
+[?2004l
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/creatures[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd proteins
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mfor datafile in *.pdb[27mfor datafile in *.pdb
+[?2004l
+[?2004h> do [K
+[?2004l
+[?2004h> ls *.pdb
+[?2004l
+[?2004h> done
+[?2004l
+[0m[01;32mcubane.pdb[0m  [01;32mmethane.pdb[0m  [01;32mpentane.pdb[0m
+[01;32methane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m
+[0m[01;32mcubane.pdb[0m  [01;32mmethane.pdb[0m  [01;32mpentane.pdb[0m
+[01;32methane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m
+[0m[01;32mcubane.pdb[0m  [01;32mmethane.pdb[0m  [01;32mpentane.pdb[0m
+[01;32methane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m
+[0m[01;32mcubane.pdb[0m  [01;32mmethane.pdb[0m  [01;32mpentane.pdb[0m
+[01;32methane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m
+[0m[01;32mcubane.pdb[0m  [01;32mmethane.pdb[0m  [01;32mpentane.pdb[0m
+[01;32methane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m
+[0m[01;32mcubane.pdb[0m  [01;32mmethane.pdb[0m  [01;32mpentane.pdb[0m
+[01;32methane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mfor alkanes in *.pdb[27mfor alkanes in *.pdb
+[?2004l
+[?2004h> do
+[?2004l
+[?2004h> [7mecho $alkanes[27m
+[C[Cecho $alkanes
+[?2004l
+[?2004h> [7mcat $alkanes > alkanes.pdb[27m
+[C[Ccat $alkanes > alkanes.pdb
+[?2004l
+[?2004h> done
+[?2004l
+cubane.pdb
+ethane.pdb
+methane.pdb
+octane.pdb
+pentane.pdb
+propane.pdb
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mecho hello there[27mecho hello there
+[?2004l
+hello there
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mfor filename in *.dat[27mfor filename in *.dat
+[?2004l
+[?2004h> do
+[?2004l
+[?2004h> $fileneam[K[K[Kame
+[?2004l
+[?2004h> [7mhead -n 100 $filename | tail -n 20[27m
+[C[Chead -n 100 $filename | tail -n 20
+[?2004l
+[?2004h> done
+[?2004l
+*.dat: command not found
+head: cannot open '*.dat' for reading: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mfor filename in "red dragon.dat" "purple unicorn[27m[7m.[27m[7mdat"[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor filename in "red dragon.dat" "purple unicorn.dat"
+[?2004l
+[?2004h> do
+[?2004l
+[?2004h> [7mhead -n 100 "$filename" | tail -n 20[27m
+[C[Chead -n 100 "$filename" | tail -n 20
+[?2004l
+[?2004h> done
+[?2004l
+head: cannot open 'red dragon.dat' for reading: No such file or directory
+head: cannot open 'purple unicorn.dat' for reading: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mcp basilisk.dat original-basilisk.dat[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp basilisk.dat original-basilisk.dat
+[?2004l
+cp: cannot stat 'basilisk.dat': No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ history
+[?2004l
+    1  script -a ~/my_unix_session
+    2  conda --version
+    3  sudo apt get install git
+    4  ls
+    5  pwd
+    6  ls -F
+    7  ls --help
+    8  man ls
+    9  exit
+   10  ls
+   11  cd ..
+   12  script -a ~/my_unix_session
+   13  pwd
+   14  ls
+   15  ls -F
+   16  ls --help
+   17  ls -a
+   18  ls -A
+   19  ls --author
+   20  ls -l --author
+   21  ls -A --author
+   22  cd ..
+   23  ls -a
+   24  ls --author
+   25  ls -l --author
+   26  ls -lh
+   27  ls -l --author
+   28  ls -rt
+   29  ls -lrt
+   30  ls -F
+   31  pwd
+   32  cd home
+   33  man ls
+   34  mkdir project
+   35  mkdir "$HOME/bin"
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd home
+   40  cd sagnik
+   41  mkdir project
+   42  ls
+   43  cd project
+   44  ls -F
+   45  text_file.txt
+   46  nano draft.txt
+   47  ls
+   48  touch my_file.txt
+   49  ls -l
+   50  rm my_file.txt
+   51  ls
+   52  cd ~/Desktop/shell-lesson-data/exercise-data/writing
+   53  mv thesis/draft.txt thesis/quotes.txt
+   54  ls
+   55  mv draft.txt quotes.txt
+   56  ls
+   57  pwd
+   58  cd ..
+   59  mkdir thesis
+   60  ls
+   61  cp project/quotes.txt thesis/quotations.txt
+   62  cd thesis
+   63  ls
+   64  pwd
+   65  rm -i
+   66  cp quotations.txt backup.txt
+   67  ls
+   68  rm -i backup.txt
+   69  ls
+   70  cp quotations.txt backup1.txt backup2.txt
+   71  ls
+   72  ls qu*.txt
+   73  ls qo*.txt
+   74  *
+   75  .
+   76  cd ..
+   77  ls
+   78  cd project
+   79  ls
+   80  wc quotes.pdb
+   81  wc quotes.txt
+   82  wc *.txt
+   83  exit
+   84  ls
+   85  cd ..
+   86  script -a ~/unix_session
+   87  cd /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data
+   88  cd exercise-data/writing
+   89  cat haiku.txt
+   90  grep not haiku.txt
+   91  grep The haiku.txt
+   92  grep -w The haiku.txt
+   93  grep -w "is not" haiku.txt
+   94  grep -n "it" haiku.txt
+   95  grep -n -w -i "the" haiku.txt
+   96  grep -n -w -v "the" haiku.txt
+   97  grep -r Yesterday .
+   98  grep --help
+   99  grep -w "of" haiku.txt
+  100  grep -E "^.o" haiku.txt
+  101  2012-11-05,22
+  102  1.txt
+  103  grep -w $1 -r $2
+  104  grep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,3 > $1.txt
+  105  grep -w $1 -r $2
+  106  ls
+  107  for sis in Jo Meg Beth Amy; do     echo $sis:;     grep -ow $sis LittleWomen.txt | wc -l; done
+  108  shell-lesson-data/exercise-data
+  109  exercise-data
+  110  find .
+  111  cd ..
+  112  find .
+  113  find . -type d
+  114  find . -type f
+  115  wc -l $(find . -name "*.txt")
+  116  wc -l ./writing/LittleWomen.txt ./writing/haiku.txt ./numbers.txt
+  117  grep "searching" $(find . -name "*.txt")
+  118  wc -l $(find . -name "*.dat") | sort -n
+  119  ls
+  120  cd proteins
+  121  ls
+  122  wc cubane.pdb
+  123  wc *.pdb
+  124  wc -l *.pdb > lengths.txt
+  125  ls lengths.txt
+  126  cat lengths.txt
+  127  sort -n lengths.txt
+  128  sort -n lengths.txt > lengths.txt
+  129  echo The echo command prints text
+  130  echo hello > testfile01.txt
+  131  head -n 3 animals.csv > animals-subset.csv
+  132  cd ..
+  133  cd animal-counts
+  134  head -n 3 animals.csv > animals-subset.csv
+  135  ls
+  136  tail -n 2 animals.csv >> animals-subset.csv
+  137  sort -n lengths.txt | head -n 1
+  138  cd ..
+  139  cd proteins
+  140  sort -n lengths.txt | head -n 1
+  141  wc -l * | sort -n | head -n 1-3
+  142  history
+  143  cd ..
+  144  cd molecules
+  145  find .
+  146  cd animal-count
+  147  cd animal-counts
+  148  cat animals.csv | head -n 5 | tail -n 3 | sort -r > final.txt
+  149  cut -d , -f 2 animals.csv
+  150  sort animals.csv | uniq -c
+  151  cut -d, -f 2 animals.csv | sort | uniq -c
+  152  cut -d, -f 2 animals.csv | sort | uniq -c | wc -l
+  153  cd north-pacific-gyre
+  154  cd ..
+  155  find.
+  156  find .
+  157  cd ..
+  158  find .
+  159  cd north-pacific-gyre
+  160  wc -l *.txt
+  161  wc -l *.txt | sort -n | head -n 5
+  162  wc -l *.txt | sort -n | tail -n 5
+  163  ls *Z.txt
+  164  cd ..
+  165  cd exercise-data/creatures
+  166  head -n 5 basilisk.dat minotaur.dat unicorn.dat
+  167  for thing in list_of_things; do     operation_using $thing; done
+  168  for filename in basilisk.dat minotaur.dat unicorn.dat; > do
+  169  >     echo $filename
+  170  >     head -n 2 $filename | tail -n 1
+  171  > done
+  172  for filename in basilisk.dat minotaur.dat unicorn.dat; do     echo $filename;     head -n 2 $filename | tail -n 1; done
+  173  do
+  174  for filename in basilisk.dat minotaur.dat unicorn.dat; do echo $filename; head -n 2 $filename | tail -n 1; done
+  175  for temperature in basilisk.dat minotaur.dat unicorn.dat; do head -n 2 $temperature | tail -n 1; done
+  176  for loop_variable in 0 1 2 3 4 5 6 7 8 9; do echo $loop_variable; done
+  177  cd ..
+  178  cd proteins
+  179  for datafile in *.pdb; do ls *.pdb; done
+  180  for alkanes in *.pdb; do echo $alkanes; cat $alkanes > alkanes.pdb; done
+  181  echo hello there
+  182  for filename in *.dat; do $filename; head -n 100 $filename | tail -n 20; done
+  183  for filename in "red dragon.dat" "purple unicorn.dat"; do head -n 100 "$filename" | tail -n 20; done
+  184  cp basilisk.dat original-basilisk.dat
+  185  history
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ ls
+[?2004l
+[0m[34;42manimal-counts[0m  [34;42mcreatures[0m  [01;32mnumbers.txt[0m  [34;42mproteins[0m  [34;42mwriting[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ ls
+[?2004l
+[0m[34;42mexercise-data[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ [7mcd north-pacific-gyre[27m
+[Ccd north-pacific-gyre
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mfor datafile in NENE*A.txt NENE*B.txt[27m 
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor datafile in NENE*A.txt NENE*B.txt
+[?2004l
+[?2004h> do
+[?2004l
+[?2004h> echo[K[K[K[K
+[K> 
+[K>    echo $datafile
+[?2004l
+[?2004h> c[Keeeee eeeeddd[K[K[K[Kqqxxsxsws [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K       
+[K> 
+[K> done
+[?2004l
+NENE01729A.txt
+NENE01736A.txt
+NENE01751A.txt
+NENE01812A.txt
+NENE01843A.txt
+NENE01978A.txt
+NENE02040A.txt
+NENE02043A.txt
+NENE01729B.txt
+NENE01751B.txt
+NENE01843B.txt
+NENE01978B.txt
+NENE02018B.txt
+NENE02040B.txt
+NENE02043B.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mfor datafile in NENE*A.txt NENE*B.txt; do echo $data[27m[7mf[27m[7mile stats-$datafile; done[27m[Afor datafile in NENE*A.txt NENE*B.txt; do echo $datafile stats-$datafile; done
+[?2004l
+NENE01729A.txt stats-NENE01729A.txt
+NENE01736A.txt stats-NENE01736A.txt
+NENE01751A.txt stats-NENE01751A.txt
+NENE01812A.txt stats-NENE01812A.txt
+NENE01843A.txt stats-NENE01843A.txt
+NENE01978A.txt stats-NENE01978A.txt
+NENE02040A.txt stats-NENE02040A.txt
+NENE02043A.txt stats-NENE02043A.txt
+NENE01729B.txt stats-NENE01729B.txt
+NENE01751B.txt stats-NENE01751B.txt
+NENE01843B.txt stats-NENE01843B.txt
+NENE01978B.txt stats-NENE01978B.txt
+NENE02018B.txt stats-NENE02018B.txt
+NENE02040B.txt stats-NENE02040B.txt
+NENE02043B.txt stats-NENE02043B.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mhistory | tail -n 5[27mhistory | tail -n 5
+[?2004l
+  189  ls
+  190  cd north-pacific-gyre
+  191  for datafile in NENE*A.txt NENE*B.txt; do   echo $datafile; done
+  192  for datafile in NENE*A.txt NENE*B.txt; do echo $datafile stats-$datafile; done
+  193  history | tail -n 5
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mfor species in cubane ethane methane[27m
+
+[7m> do[27m
+
+[7m>     for temperature in 25 30 37 40[27m
+
+[7m>     do[27m
+
+[7m>         mkdir $species-$temperature[27m
+
+[7m>     done[27m
+
+[7m> done[27m
+
+ [A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor species in cubane ethane methane
+
+> do
+
+>     for temperature in 25 30 37 40
+
+>     do
+
+>         mkdir $species-$temperature
+
+>     done
+
+> done
+
+ [A[C[C[C[C[C[C[1Pdone
+[C
+[1Pdone
+[A[C[C[C[C[C[C[C[C[C[C[1Pdone[1Pdone[1Pdone[1Pdone
+[C[C[1Pdone
+[C
+[1Pdone
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P
+[1P[A[C[C[C[C[C[C[C[C[1Pdo[1Pdo[1Pdo[1Pdo[1Pdo
+[1Pdo
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P
+[1P[A[C[C[C[C[1Pdo
+[1Pdo
+
+
+
+
+
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ ls
+[?2004l
+[0m[34;42mexercise-data[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ cd exercise-data
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd proteins
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mnano middle.sh[27mnano middle.sh
+[?2004l
+[?2004h[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;31H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                    middle.sh                             [1;71H(B[m
+[33d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[33;57H(B[0;7m^T(B[m Execute
+[34d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify
+[2d[?12l[?25h[?25l[32d[K[1;45H(B[0;7m*[71G(B[m
+[2d(B[0;1m[34mhead[35m -n[39m(B[m 15 octane.pdb [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[?12l[?25h[?25l[33;15H    (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append  [55G(B[0;7mM-B(B[m Backup File[34;2H(B[0;7mC(B[m Cancel         (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m Browse[K
+[32d(B[0;7mFile Name to Write: middle.sh                                           [32;30H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;45H(B[0;7m [71G(B[m[32;29H(B[0;7m[ Wrote 1 line ](B[m[33;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[55G  (B[0;7m^T(B[m Execute[K[34;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste      (B[0;7m^J(B[m Justify[?12l[?25h[2;34H[?25l
+[32d[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mbash middle.sh[27mbash middle.sh
+[?2004l
+ATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mnano middle.sh[27mnano middle.sh
+[?2004l
+[?2004h[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;30H(B[0;7m[ Reading... ](B[m[32;29H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                    middle.sh                             [1;71H(B[m
+[33d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[33;57H(B[0;7m^T(B[m Execute
+[34d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify
+[2d(B[0;1m[34mhead[35m -n[39m(B[m 15 octane.pdb [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5
+[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h5[?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hp[?25l
+[32d[K[?12l[?25h[2;21H[?25l[?12l[?25hb[?25l[1;45H(B[0;7m*[71G(B[m[?12l[?25h[2;21H[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[32m$[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;13H[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;14H[?25l [K
+[3d [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5
+[?12l[?25h[?25l[2;15H[32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5
+[3d[K[2;14H[?12l[?25h[?25l[33;15H    (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append  [55G(B[0;7mM-B(B[m Backup File[34;2H(B[0;7mC(B[m Cancel         (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m Browse[K
+[32d(B[0;7mFile Name to Write: middle.sh                                           [32;30H(B[m[?12l[?25h[?25l [?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;45H(B[0;7m [71G(B[m[32;29H(B[0;7m[ Wrote 1 line ](B[m[33;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[55G  (B[0;7m^T(B[m Execute[K[34;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste      (B[0;7m^J(B[m Justify[?12l[?25h[2;14H[?25l
+[32d[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mbash middle.sh octane.pdb[27mbash middle.sh octane.pdb
+[?2004l
+ATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mbash middle.sh pentane.pdb[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash middle.sh pentane.pdb
+[?2004l
+ATOM      9  H           1       1.324   0.350  -1.332  1.00  0.00
+ATOM     10  H           1       1.271   1.378   0.122  1.00  0.00
+ATOM     11  H           1      -0.074  -0.384   1.288  1.00  0.00
+ATOM     12  H           1      -0.048  -1.362  -0.205  1.00  0.00
+ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mnano middle.sh[27mnano middle.sh
+[?2004l
+[?2004h[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;30H(B[0;7m[ Reading... ](B[m[32;29H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                    middle.sh                             [1;71H(B[m
+[33d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[33;57H(B[0;7m^T(B[m Execute
+[34d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify
+[2d(B[0;1m[34mhead[35m -n[39m(B[m 15 (B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5
+[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h5[?25l[1;45H(B[0;7m*[71G(B[m[?12l[?25h[2;10H[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h" (B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;10H[?25l[?12l[?25h[32m$[39m(B[m (B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;11H[?25l[?12l[?25h(B[0;1m[31m$2[39m(B[m (B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;12H[?25l[?12l[?25h(B[0;1m[33m"$2"[39m(B[m (B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;13H[?25l[?12l[?25h [?25l[?12l[?25h"(B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;15H[?25l[?12l[?25h[C[?25l
+[32d[K[?12l[?25h[2;17H[?25l[?12l[?25h(B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;18H[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h5[?25l[?12l[?25h
+[3d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[2;30H[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h "[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$3[39m(B[m[?25l[?12l[?25h(B[0;1m[33m"$3"[39m(B[m[?25l
+[3d[?12l[?25h[?25l[2;33H[?12l[?25h[?25l[?12l[?25h
+[3d[?25l[?12l[?25h[?25l[?12l[?25h[2;33H[?25l[33;15H    (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append  [55G(B[0;7mM-B(B[m Backup File[34;2H(B[0;7mC(B[m Cancel         (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m Browse[K
+[32d(B[0;7mFile Name to Write: middle.sh                                           [32;30H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;45H(B[0;7m [71G(B[m[32;29H(B[0;7m[ Wrote 1 line ](B[m[33;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[55G  (B[0;7m^T(B[m Execute[K[34;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste      (B[0;7m^J(B[m Justify[?12l[?25h[2;33H[?25l
+[32d[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mbash middle.sh pentane.pdb 15 5[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash middle.sh pentane.pdb 15 5
+[?2004l
+ATOM      9  H           1       1.324   0.350  -1.332  1.00  0.00
+ATOM     10  H           1       1.271   1.378   0.122  1.00  0.00
+ATOM     11  H           1      -0.074  -0.384   1.288  1.00  0.00
+ATOM     12  H           1      -0.048  -1.362  -0.205  1.00  0.00
+ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mbash middle.sh pentane.pdb 20 5[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash middle.sh pentane.pdb 20 5
+[?2004l
+ATOM     14  H           1      -1.259   1.420   0.112  1.00  0.00
+ATOM     15  H           1      -2.608  -0.407   1.130  1.00  0.00
+ATOM     16  H           1      -2.540  -1.303  -0.404  1.00  0.00
+ATOM     17  H           1      -3.393   0.254  -0.321  1.00  0.00
+TER      18              1
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mwc -l *.pdb | sort -n[27mwc -l *.pdb | sort -n
+[?2004l
+   9 methane.pdb
+  12 ethane.pdb
+  15 alkanes.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 122 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mnano sorted.sh[27mnano sorted.sh
+[?2004l
+[?2004h[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;31H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                    sorted.sh                             [1;71H(B[m
+[33d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[33;57H(B[0;7m^T(B[m Execute
+[34d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify
+[2d[?12l[?25h[?25l[32d[K[1;45H(B[0;7m*[71G(B[m
+[2dwc(B[0;1m[35m -l[39m(B[m (B[0;1m[33m"$@"[39m(B[m [32m|[39m(B[m (B[0;1m[34msort[35m -n[39m(B[m[?12l[?25h[?25l[33;15H    (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append  [55G(B[0;7mM-B(B[m Backup File[34;2H(B[0;7mC(B[m Cancel         (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m Browse[K
+[32d(B[0;7mFile Name to Write: sorted.sh                                           [32;30H(B[m[?12l[?25h[?25l [?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;45H(B[0;7m [71G(B[m[32;29H(B[0;7m[ Wrote 1 line ](B[m[33;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[55G  (B[0;7m^T(B[m Execute[K[34;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste      (B[0;7m^J(B[m Justify[?12l[?25h[2;21H[?25l
+[32d[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mbash sorted.sh *.pdb ../creatures/*.dat[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash sorted.sh *.pdb ../creatures/*.dat
+[?2004l
+    9 methane.pdb
+   12 ethane.pdb
+   15 alkanes.pdb
+   15 propane.pdb
+   20 cubane.pdb
+   21 pentane.pdb
+   30 octane.pdb
+  163 ../creatures/basilisk.dat
+  163 ../creatures/minotaur.dat
+  163 ../creatures/unicorn.dat
+  611 total
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mhistory | tail -n 5 > redo-figure-3.sh[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chistory | tail -n 5 > redo-figure-3.sh
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mhistory | tail -n 5 > recent.sh[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chistory | tail -n 5 > recent.sh
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mcd ../../north-pacific-gyre/[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ../../north-pacific-gyre/
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mnano do-stats.sh[27mnano do-stats.sh
+[?2004l
+[?2004h[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;31H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                   do-stats.sh                            [1;71H(B[m
+[33d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[33;57H(B[0;7m^T(B[m Execute
+[34d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify
+[2d[?12l[?25h[?25l[32d[K[1;46H(B[0;7m*[71G(B[m
+[2d[32mfor[39m(B[m datafile [32min[39m(B[m (B[0;1m[33m"$@"
+[3d(B[0m[32mdo[4;5H(B[0;1m[34mecho[39m(B[m (B[0;1m[31m$datafile[5;5H[39m(B[mbash goostats.sh (B[0;1m[31m$datafile[39m(B[m stats-(B[0;1m[31m$datafile
+[6d(B[0m[32mdone
+[7d[39m(B[m[?12l[?25h[?25l[33;15H    (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append  [55G(B[0;7mM-B(B[m Backup File[34;2H(B[0;7mC(B[m Cancel         (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m Browse[K
+[32d(B[0;7mFile Name to Write: do-stats.sh                                         [32;32H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;46H(B[0;7m [71G(B[m[32;28H(B[0;7m[ Wrote 5 lines ](B[m[33;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[55G  (B[0;7m^T(B[m Execute[K[34;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste      (B[0;7m^J(B[m Justify[?12l[?25h
+[7d[?25l[32d[J[34d[?12l[?25h[34;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mbash do-stats.sh NENE*A.txt NENE*B.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash do-stats.sh NENE*A.txt NENE*B.txt
+[?2004l
+NENE01729A.txt
+NENE01736A.txt
+NENE01751A.txt
+NENE01812A.txt
+NENE01843A.txt
+NENE01978A.txt
+NENE02040A.txt
+NENE02043A.txt
+NENE01729B.txt
+NENE01751B.txt
+NENE01843B.txt
+NENE01978B.txt
+NENE02018B.txt
+NENE02040B.txt
+NENE02043B.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ ls
+[?2004l
+[0m[34;42mexercise-data[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ cd exercise-data
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd proteins
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mbash longest.sh shell-lesson-data/exercise-data/[27m[7mp[27m[7mroteins pdb[27m[A[C[C[C[C[C[C[C[C[C[C[C[Cbash longest.sh shell-lesson-data/exercise-data/proteins pdb
+[?2004l
+bash: longest.sh: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mwc -l $1/*.$2 | sort -n | tail -n 2 | head -n 1[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l $1/*.$2 | sort -n | tail -n 2 | head -n 1
+[?2004l
+wc: '/*.': No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mecho *.*[27mecho *.*
+[?2004l
+alkanes.pdb animals-subset.csv cubane.pdb ethane.pdb lengths.txt methane.pdb middle.sh octane.pdb pentane.pdb propane.pdb recent.sh redo-figure-3.sh sorted.sh testfile01.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mecho $@.pdb[27mecho $@.pdb
+[?2004l
+.pdb
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ [7mfor filename in $1 $2 $3[27m
+
+[7mdo[27m
+
+[7m    cat $filename[27m
+
+[7mdone[27m
+
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor filename in $1 $2 $3
+
+do
+
+    cat $filename
+
+done
+
+[A
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data/proteins[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/exercise-data[00m$ cd ..
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ ls
+[?2004l
+[0m[34;42mexercise-data[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data[00m$ cd [7mnorth-pacific-gyre[27m
+[C[C[C[Cnorth-pacific-gyre
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ cd scripts
+[?2004l
+bash: cd: scripts: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ ls
+[?2004l
+[0m[01;32mNENE01729A.txt[0m  [01;32mNENE02043B.txt[0m  [01;32mstats-NENE01729A.txt[0m
+[01;32mNENE01729B.txt[0m  [34;42mcubane-25[0m       [01;32mstats-NENE01729B.txt[0m
+[01;32mNENE01736A.txt[0m  [34;42mcubane-30[0m       [01;32mstats-NENE01736A.txt[0m
+[01;32mNENE01751A.txt[0m  [34;42mcubane-37[0m       [01;32mstats-NENE01751A.txt[0m
+[01;32mNENE01751B.txt[0m  [34;42mcubane-40[0m       [01;32mstats-NENE01751B.txt[0m
+[01;32mNENE01812A.txt[0m  [01;32mdo-stats.sh[0m     [01;32mstats-NENE01812A.txt[0m
+[01;32mNENE01843A.txt[0m  [34;42methane-25[0m       [01;32mstats-NENE01843A.txt[0m
+[01;32mNENE01843B.txt[0m  [34;42methane-30[0m       [01;32mstats-NENE01843B.txt[0m
+[01;32mNENE01971Z.txt[0m  [34;42methane-37[0m       [01;32mstats-NENE01978A.txt[0m
+[01;32mNENE01978A.txt[0m  [34;42methane-40[0m       [01;32mstats-NENE01978B.txt[0m
+[01;32mNENE01978B.txt[0m  [01;32mgoodiff.sh[0m      [01;32mstats-NENE02018B.txt[0m
+[01;32mNENE02018B.txt[0m  [01;32mgoostats.sh[0m     [01;32mstats-NENE02040A.txt[0m
+[01;32mNENE02040A.txt[0m  [34;42mmethane-25[0m      [01;32mstats-NENE02040B.txt[0m
+[01;32mNENE02040B.txt[0m  [34;42mmethane-30[0m      [01;32mstats-NENE02043A.txt[0m
+[01;32mNENE02040Z.txt[0m  [34;42mmethane-37[0m      [01;32mstats-NENE02043B.txt[0m
+[01;32mNENE02043A.txt[0m  [34;42mmethane-40[0m
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mfor datafile in "$@"[27m
+
+[7mdo[27m
+
+[7m    echo $datfile[27m
+
+[7m    bash goostats.sh $datafile stats-$datafile[27m
+
+[7mdone[27m
+
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor datafile in "$@"
+
+do
+
+    echo $datfile
+
+    bash goostats.sh $datafile stats-$datafile
+
+done
+
+[A
+[?2004l
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mbash do-errors.sh NENE*A.txt NENE*B.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash do-errors.sh NENE*A.txt NENE*B.txt
+[?2004l
+bash: do-errors.sh: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ [7mbash -x do-errors.sh NENE*A.txt NENE*B.txt[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash -x do-errors.sh NENE*A.txt NENE*B.txt
+[?2004l
+bash: do-errors.sh: No such file or directory
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ bash -x do-errors.sh NENE*A.txt NENE*B.txt[1P[1P[1P[1P[1P[1P[1@s[1@t[1@a[1@t[1@s
+[?2004l
++ for datafile in "$@"
++ echo NENE01729A.txt
+NENE01729A.txt
++ bash goostats.sh NENE01729A.txt stats-NENE01729A.txt
++ for datafile in "$@"
++ echo NENE01736A.txt
+NENE01736A.txt
++ bash goostats.sh NENE01736A.txt stats-NENE01736A.txt
++ for datafile in "$@"
++ echo NENE01751A.txt
+NENE01751A.txt
++ bash goostats.sh NENE01751A.txt stats-NENE01751A.txt
++ for datafile in "$@"
++ echo NENE01812A.txt
+NENE01812A.txt
++ bash goostats.sh NENE01812A.txt stats-NENE01812A.txt
++ for datafile in "$@"
++ echo NENE01843A.txt
+NENE01843A.txt
++ bash goostats.sh NENE01843A.txt stats-NENE01843A.txt
++ for datafile in "$@"
++ echo NENE01978A.txt
+NENE01978A.txt
++ bash goostats.sh NENE01978A.txt stats-NENE01978A.txt
++ for datafile in "$@"
++ echo NENE02040A.txt
+NENE02040A.txt
++ bash goostats.sh NENE02040A.txt stats-NENE02040A.txt
++ for datafile in "$@"
++ echo NENE02043A.txt
+NENE02043A.txt
++ bash goostats.sh NENE02043A.txt stats-NENE02043A.txt
++ for datafile in "$@"
++ echo NENE01729B.txt
+NENE01729B.txt
++ bash goostats.sh NENE01729B.txt stats-NENE01729B.txt
++ for datafile in "$@"
++ echo NENE01751B.txt
+NENE01751B.txt
++ bash goostats.sh NENE01751B.txt stats-NENE01751B.txt
++ for datafile in "$@"
++ echo NENE01843B.txt
+NENE01843B.txt
++ bash goostats.sh NENE01843B.txt stats-NENE01843B.txt
++ for datafile in "$@"
++ echo NENE01978B.txt
+NENE01978B.txt
++ bash goostats.sh NENE01978B.txt stats-NENE01978B.txt
++ for datafile in "$@"
++ echo NENE02018B.txt
+NENE02018B.txt
++ bash goostats.sh NENE02018B.txt stats-NENE02018B.txt
++ for datafile in "$@"
++ echo NENE02040B.txt
+NENE02040B.txt
++ bash goostats.sh NENE02040B.txt stats-NENE02040B.txt
++ for datafile in "$@"
++ echo NENE02043B.txt
+NENE02043B.txt
++ bash goostats.sh NENE02043B.txt stats-NENE02043B.txt
+[?2004h]0;sagnik@TIGER01038: /mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre [01;32msagnik@TIGER01038[00m:[01;34m/mnt/c/Users/sagnik.ganguly/Desktop/shell-lesson-data/north-pacific-gyre[00m$ exit
+[?2004l
+exit
+
+Script done on 2023-03-12 22:45:11+05:30 [COMMAND_EXIT_CODE="0"]
