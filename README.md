@@ -33,3 +33,31 @@ The following techniques have been used:
   ```sh
   (mle-dev):~$ python nonstandardcode.py
   ```
+
+## To format the code according to better coding practices
+
+* Using black
+
+  ```sh
+  black nonstandardcode.py...
+  reformatted nonstandardcode.py...
+  All done! ✨ 🍰 ✨
+  1 file reformatted.
+  ```
+
+* Using isort
+
+  ```sh
+  isort nonstandardcode.py
+  Fixing C:\Users\sagnik.ganguly\Documents\TCE\tiger_projects\nonstandardcode.py
+  ```
+
+* setup.cfg file contents
+  [isort]
+  profile = black
+  float_to_top = True
+
+  [flake8]
+  max-line-length = 119
+  extend-ignore = E303, F401
+![1679338292530](image/README/1679338292530.png)
