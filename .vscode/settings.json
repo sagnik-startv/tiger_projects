@@ -1,0 +1,18 @@
+{
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.pythonpath": "C:/Users/sagnik.ganguly/Anaconda3/envs/myenv",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--extend-ignore=E303,F401"
+    ],
+    "isort.args": [
+        "--profile=black",
+        "--float-to-top"
+    ],
+    "python.formatting.provider": "black"
+}
